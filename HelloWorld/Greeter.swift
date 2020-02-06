@@ -12,4 +12,8 @@ public class Greeter {
 	public class func greet() {
 		print("Hello World!")
 	}
+
+	public class func greet(person: String) {
+		print("Hello \(person)!")
+	}
 }
