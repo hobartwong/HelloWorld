@@ -10,6 +10,7 @@
 		CD101FB923EC903800E8F8D3 /* HelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD101FAF23EC903800E8F8D3 /* HelloWorld.framework */; };
 		CD101FBE23EC903800E8F8D3 /* HelloWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD101FBD23EC903800E8F8D3 /* HelloWorldTests.swift */; };
 		CD101FC023EC903800E8F8D3 /* HelloWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = CD101FB223EC903800E8F8D3 /* HelloWorld.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD101FCA23EC91D400E8F8D3 /* Greeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD101FC923EC91D400E8F8D3 /* Greeter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		CD101FB823EC903800E8F8D3 /* HelloWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD101FBD23EC903800E8F8D3 /* HelloWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldTests.swift; sourceTree = "<group>"; };
 		CD101FBF23EC903800E8F8D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD101FC923EC91D400E8F8D3 /* Greeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greeter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				CD101FB223EC903800E8F8D3 /* HelloWorld.h */,
 				CD101FB323EC903800E8F8D3 /* Info.plist */,
+				CD101FC923EC91D400E8F8D3 /* Greeter.swift */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					CD101FAE23EC903800E8F8D3 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					CD101FB723EC903800E8F8D3 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD101FCA23EC91D400E8F8D3 /* Greeter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		CD101FC423EC903800E8F8D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 22WULF6P39;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hobart.HelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		CD101FC523EC903800E8F8D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 22WULF6P39;
@@ -388,6 +396,7 @@
 		CD101FC723EC903800E8F8D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22WULF6P39;
 				INFOPLIST_FILE = HelloWorldTests/Info.plist;
@@ -406,6 +415,7 @@
 		CD101FC823EC903800E8F8D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22WULF6P39;
 				INFOPLIST_FILE = HelloWorldTests/Info.plist;
